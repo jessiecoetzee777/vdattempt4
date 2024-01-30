@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            background-image: url('/Users/mac/Downloads/valentines pic.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff; /* Set text color to contrast with the background */
+            padding-bottom: 20px;
+        }
+        .content-container {
+            text-align: center;
+            padding: 20px; /* Add padding for better appearance */
+        }
+        h1, p {
+            margin: 0;
+        }
+        h1 {
+            font-size: 2em;
+            color: #000000;
+            text-shadow: 2px 2px 7px #ffffff; /* White shadow for a border effect */
+            margin-bottom: 10px; /* Adjust spacing between title and text */
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px; /* Adjust spacing between text and image */
+            max-width: 900px; /* Set maximum width for better readability */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px; /* Add padding to the paragraph */
+        }
+        img.heart {
+            width: 100px; /* Adjust the size as needed */
+            height: auto;
+            margin: 20px; /* Add margin for better spacing */
+            cursor: pointer; /* Change cursor to pointer on hover to indicate it's clickable */
+            position: absolute; /* Set absolute positioning */
+            top: 20px; /* Adjust the distance from the top */
+            right: 20px; /* Adjust the distance from the right */
+        }
+</style>
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="/Users/mac/Downloads/fall in love with you..mp3" type="audio/mp3">
+    </audio>
+    <div class="content-container">
+    <h1>Happy Valentine's Day Boo!</h1>
+    <p>Happy Valentines day my baby! Ek is so blessed dat ek jou myne kan noem. Jy is die beste ding wat al met my gebeur het en ek sou nooit enige iemand anders eerder wou hê nie. Wanneer ek by jou is, is ek op my gelukkigste. Jy maak my voel soos 'n prinses in 'n fairy tale en jy is my prins. Jy behandel my met so baie liefde en patience en ek sal altyd so dankbaar wees daaroor. Ek voel jammer vir ander meisies want ek het die aantreklikste, oulikste, funnyste, slimste en liefdevolste ou ooit. Ek sal jou vir altyd lief hê en niks sal dit kan verander nie. Ek kan nie wag om elke liewe valentyns dag met jou te spandeer tot dat ons eendag oud en wrinkely is, en dan sal en nogsteets so lief vir jou wees. Baie liefde van jou baby xoxo</p>
+    <button onclick="startBackgroundMusic()">Press me!</button>
+</div>
+    <!-- Heart images as clickable elements -->
+    <img class="heart" src="/Users/mac/Downloads/little heart.png" alt="Heart 1" onclick="showPopup('You make my heart happy!')">
+    <img class="heart" src="/Users/mac/Downloads/little heart.png" alt="Heart 2" onclick="showPopup('I love you!')">
+</div>
+
+<script>
+    function startBackgroundMusic() {
+            var audio = document.getElementById("backgroundMusic");
+            audio.play();
+    }
+    function showPopup(message) {
+        alert(message);
+    }
+</script>
+</body>
+</html>
